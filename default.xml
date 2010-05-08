@@ -178,4 +178,6 @@
   <project path="vendor/qcom/android-open" name="platform/vendor/qcom/android-open" />
   <project path="vendor/qcom/proprietary-open" name="platform/vendor/qcom/proprietary-open" />
   <project path="vendor/sample" name="platform/vendor/sample" />
+  <project path="vendor/apple/common" name="platform/vendor/apple/common" />
+  <project path="vendor/apple/iDroid-3g" name="platform/vendor/apple/iDroid-3g" />
 </manifest>
