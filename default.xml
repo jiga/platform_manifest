@@ -3,12 +3,18 @@
   <remote  name="korg"
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
+  <remote  name="jiga"
+           fetch="git://github.com/jiga/"/>
+  <remote  name="ricky26"
+           fetch="git://github.com/ricky26/"/>
   <default revision="master"
            remote="korg" />
 
   <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <project path="kernel" name="kernel_common" remote="jiga"/>
 
   <project path="bionic" name="platform/bionic" />
 
@@ -25,6 +31,8 @@
   <project path="device/htc/passion-common" name="device/htc/passion-common" />
 
   <project path="external/aes" name="platform/external/aes" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
@@ -104,6 +112,7 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
 
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/htc/dream" name="platform/hardware/htc/dream" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
@@ -178,6 +187,5 @@
   <project path="vendor/qcom/android-open" name="platform/vendor/qcom/android-open" />
   <project path="vendor/qcom/proprietary-open" name="platform/vendor/qcom/proprietary-open" />
   <project path="vendor/sample" name="platform/vendor/sample" />
-  <project path="vendor/apple/common" name="platform/vendor/apple/common" />
-  <project path="vendor/apple/iDroid-3g" name="platform/vendor/apple/iDroid-3g" />
+  <project path="vendor/iDroid" name="android_idroid" remote="ricky26" />
 </manifest>
